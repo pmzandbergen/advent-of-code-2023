@@ -4,7 +4,7 @@ $path = __DIR__ . '/' . ($argv[1] ?? '');
 if (!is_file($path)) {
     echo 'Usage: ' . $argv[0] . ' games_file [-v|--verbose]' . PHP_EOL . PHP_EOL . 'Options' .
         PHP_EOL . ' -v, --verbose      Verbose output';
-    echo 'Please provide the filename of your calibration document as first argument.' . PHP_EOL;
+    echo 'Please provide the filename of your game document as first argument.' . PHP_EOL;
     exit(1);
 }
 $verbose = in_array('-v', $argv) || in_array('--verbose', $argv);
